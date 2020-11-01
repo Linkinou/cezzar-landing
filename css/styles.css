@@ -3,6 +3,12 @@
 
 body {
   margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+body > * {
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
@@ -17,17 +23,13 @@ h3 {
   font-family: 'Rakkas', cursive;
 }
 
-.wrapper {
-  font-family: "Montserrat" serif;
-}
-
 .top {
-  height: 90px;
+  height: 70px;
 }
 
 .top > img {
   padding: 30px;
-  width: 150px;
+  width: 120px;
 }
 
 header {
@@ -35,13 +37,13 @@ header {
 }
 
 header > .estampe {
-  width: 100px;
+  width: 80px;
   position: absolute;
   left:0;
   right:0;
   margin-left:auto;
   margin-right:auto;
-  top: 338px;
+  top: 330px;
 }
 
 header > h1 {
@@ -57,10 +59,18 @@ header > h1 {
 }
 
 .intro > p {
-  font-size: 20px;
+  font-size: 17px;
+  line-height: 25px;
   color: gray;
-  width: 70vw;
+  width: 80vw;
   margin: auto;
+}
+
+.intro > h2 {
+  width: 250px;
+  margin: auto;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .features-background {
@@ -74,15 +84,118 @@ header > h1 {
   padding-top: 20px;
   color: white;
   background-color: black;
-  width: 70vw;
+  width: 80vw;
   margin: auto;
   text-align: center;
 }
 
-.feature {
+.features-list > h2 {
+  width: 250px;
+  margin: auto;
+  padding: 20px;
+  font-size: 24px;
+}
 
+.feature {
+  padding-top: 40px;
 }
 
 .feature > img {
+  width: 70px;
+}
+
+.feature > p {
+  width: 270px;
+  margin: auto;
+  line-height: 27px;
+  padding-top: 15px;
+}
+
+button {
+  border: #8ebdd0 solid 1px;
+  border-bottom: white 4px dashed;
+  border-radius: 8px;
+  background-color: #8ebdd0;
+  color: white;
+  height: 43px;
+  width: 130px;
+  font-size: 15px;
+  font-family: 'Rakkas', cursive;
+}
+
+button.coming-soon {
+  position: relative;
+  top: 18px;
+  margin-top: 45px;
+}
+
+.form {
+  padding-top: 50px;
+  width: 80vw;
+  margin: auto;
+  padding-bottom: 130px;
+}
+
+.form > h2 {
+  text-align: center;
+}
+
+form > label {
+  display: block;
+  font-weight: 700;
+  padding: 14px 0;
+}
+
+label > input,textarea   {
+  display: block;
+  margin: 15px 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 13px;
+  border: lightgray 1px solid;
+  border-radius: 10px;
+}
+
+.cgu {
+  display: grid;
+  grid-template-columns: min-content auto;
+  align-items: flex-start;
+  grid-gap: 15px;
+  padding-bottom: 45px;
+}
+
+.cgu > input {
+  border: lightgray 1px solid;
+  border-radius: 10px;
+}
+
+.cgu > p {
+  color: gray;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0;
+}
+
+button.form-button {
+  border: #eabed6 solid 1px;
+  border-bottom: white 4px dashed;
+  background-color: #eabed6;
+  float: right;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+footer > * {
+  padding: 20px 0;
+}
+
+footer > img {
   width: 100px;
+  padding-top: 50px;
 }
