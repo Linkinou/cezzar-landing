@@ -1,0 +1,88 @@
+/* rose : #eabed6 */
+/* blue pastel : #8ebdd0 */
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Rakkas', cursive;
+}
+
+h2 {
+  font-family: 'Rakkas', cursive;
+}
+
+h3 {
+  font-family: 'Rakkas', cursive;
+}
+
+.wrapper {
+  font-family: "Montserrat" serif;
+}
+
+.top {
+  height: 90px;
+}
+
+.top > img {
+  padding: 30px;
+  width: 150px;
+}
+
+header {
+  background-color: #8ebdd0;
+}
+
+header > .estampe {
+  width: 100px;
+  position: absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  top: 338px;
+}
+
+header > h1 {
+  color: white;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 35px;
+}
+
+.intro {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.intro > p {
+  font-size: 20px;
+  color: gray;
+  width: 70vw;
+  margin: auto;
+}
+
+.features-background {
+  background-image: url('../img/motif_bande_noire.svg');
+  background-repeat: repeat-x;
+  padding-top: 35px;
+  margin-top: 40px;
+}
+
+.features-list {
+  padding-top: 20px;
+  color: white;
+  background-color: black;
+  width: 70vw;
+  margin: auto;
+  text-align: center;
+}
+
+.feature {
+
+}
+
+.feature > img {
+  width: 100px;
+}

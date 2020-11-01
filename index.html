@@ -3,17 +3,88 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width">
   <title>CEZZAR - Votre partenaire cinéma</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;800&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  Hello World
+  <div class="wrapper">
+
+    <div class="top">
+      <img src="./img/logo_noir.svg" />
+    </div>
+
+    <header>
+      <h1>Booster<br> de fréquentation<br> & de rentabilité</h1>
+      <div class="estampe">
+        <img src="./img/estampille_header.svg" />
+      </div>
+    </header>
+
+    <div class="intro">
+      <h2>CEZZAR, votre booster de fréquentation</h2>
+      <p>
+        La première plateforme de référence en terme de ventes privilèges de la
+        place de cinéma. C'est le partenaire qui vous offre une réponse innovante
+        à vos besoins de fréquentations et de rentabilité !
+      </p>
+    </div>
+
+    <div class="features-background">
+      <div class="features-list">
+
+        <h2>Pourquoi devenir partenaire CEZZAR ?</h2>
+
+        <div class="feature">
+          <img src="./img/levier.svg" />
+          <p>Pour bénéficier d'un nouveau levier de fréquentation innovant</p>
+        </div>
+
+        <div class="feature">
+          <img src="./img/levier.svg" />
+          <p>Pour bénéficier d'un nouveau levier de fréquentation innovant</p>
+        </div>
+
+        <div class="feature">
+          <img src="./img/levier.svg" />
+          <p>Pour bénéficier d'un nouveau levier de fréquentation innovant</p>
+        </div>
+
+        <div class="button coming-soon">
+          <div class="text">Lancement 2021</div>
+          <div class="footer"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="form" >
+      <h2>Contactez-nous !</h2>
+      <form name="contact" method="POST" data-netlify="true">
+          <label>Nom*: <input type="text" name="name" placeholder="Votre nom..."/></label>
+          <label>Prénom*: <input type="text" name="firstname" placeholder="Votre prénom..."/></label>
+          <label>Structure: <input type="text" name="structure" placeholder="Votre structure..."/></label>
+          <label>Email*: <input type="text" name="email" placeholder="Votre email..."/></label>
+          <label>Téléphone: <input type="text" name="phone" placeholder="Votre téléphone..."/></label>
+          <label>Objet: <input type="text" name="object" placeholder="Sujet de votre demande..."/></label>
+          <label>Message*: <textarea type="text" name="message" placeholder="Votre message..."></textarea></label>
+
+          <button type="submit" name="button">Envoyer</button>
+      </form>
+    </div>
+
+    <footer>
+      <img src="./img/logo_blanc.svg" />
+      <p>CEZZAR est soutenu par la SAMOA Creative Factory.</p>
+      <p>&copy;Cezzar 2020 | Mentions légales</p>
+    </footer>
+
+  </div>
 </body>
 </html>
