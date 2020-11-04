@@ -11,6 +11,10 @@ body > * {
   font-family: 'Montserrat', sans-serif;
 }
 
+textarea {
+  font-family: 'Montserrat', sans-serif;
+}
+
 h1 {
   font-family: 'Rakkas', cursive;
 }
@@ -27,7 +31,7 @@ h3 {
   height: 70px;
 }
 
-.top > img {
+.top > a > img {
   padding: 30px;
   width: 120px;
 }
@@ -51,6 +55,10 @@ header > h1 {
   padding-top: 70px;
   padding-bottom: 70px;
   padding-left: 35px;
+}
+
+h2 {
+  font-size: 28px;
 }
 
 .intro {
@@ -82,18 +90,25 @@ header > h1 {
 
 .features-list {
   padding-top: 20px;
+  margin: auto;
   color: white;
   background-color: black;
   width: 80vw;
-  margin: auto;
   text-align: center;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  align-items: center;
+  justify-items: center;
 }
 
 .features-list > h2 {
   width: 250px;
-  margin: auto;
   padding: 20px;
-  font-size: 24px;
+  margin: auto;
 }
 
 .feature {
@@ -106,7 +121,6 @@ header > h1 {
 
 .feature > p {
   width: 270px;
-  margin: auto;
   line-height: 27px;
   padding-top: 15px;
 }
@@ -117,9 +131,9 @@ button {
   border-radius: 8px;
   background-color: #8ebdd0;
   color: white;
-  height: 43px;
-  width: 130px;
-  font-size: 15px;
+  height: 50px;
+  width: 170px;
+  font-size: 20px;
   font-family: 'Rakkas', cursive;
 }
 
@@ -138,6 +152,11 @@ button.coming-soon {
 
 .form > h2 {
   text-align: center;
+}
+
+.fields {
+  display: grid;
+  grid-template-columns: auto;
 }
 
 form > label {
@@ -191,11 +210,75 @@ footer {
   grid-row-end: 3;
 }
 
-footer > * {
+/* footer > * {
   padding: 20px 0;
+} */
+
+footer > p > a {
+  color: white;
 }
 
 footer > img {
   width: 100px;
   padding-top: 50px;
+}
+
+footer > .samoa > img {
+  width: 100px;
+}
+
+.social {
+  width: 30px;
+}
+
+@media only screen and (min-width: 762px) {
+
+  header > .estampe {
+    top: 455px;
+  }
+
+  button {
+    height: 60px;
+    width: 210px;
+    font-size: 23px;
+  }
+
+.form {
+    width: 60vw;
+}
+
+  .fields {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 50px;
+  }
+
+  .features-background {
+    padding-top: 65px;
+  }
+
+  .features-list {
+    width: 100%;
+  }
+
+  .features-list > h2 {
+    width: 100%;
+    font-size: 36px;
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: center;
+  }
+
+  h1 {
+    font-size: 56px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
 }
