@@ -27,13 +27,33 @@ h3 {
   font-family: 'Rakkas', cursive;
 }
 
-.top {
-  height: 70px;
+.wrapper {
+  padding-top: 86px;
 }
 
-.top > a > img {
+.top {
+  display: grid;
+  grid-template-columns: min-content auto auto;
+  align-items: center;
+  height: 92px;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo > img {
   padding: 30px;
   width: 120px;
+}
+
+.social {
+  justify-self: flex-end;
+  padding-right: 30px;
+}
+
+.social > img {
+  width: 30px;
 }
 
 header {
@@ -47,7 +67,7 @@ header > .estampe {
   right:0;
   margin-left:auto;
   margin-right:auto;
-  top: 330px;
+  top: 340px;
 }
 
 header > h1 {
@@ -224,11 +244,7 @@ footer > img {
 }
 
 footer > .samoa > img {
-  width: 100px;
-}
-
-.social {
-  width: 30px;
+  width: 160px;
 }
 
 @media only screen and (min-width: 762px) {
