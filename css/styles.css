@@ -28,7 +28,7 @@ h3 {
 }
 
 .wrapper {
-  padding-top: 86px;
+  padding-top: 54px;
 }
 
 .top {
@@ -57,7 +57,12 @@ h3 {
 }
 
 header {
-  background-color: #8ebdd0;
+  background-image: url('../img/banner_1920px.jpg');
+  background-color: #EFC0B6;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 300px;
 }
 
 header > .estampe {
@@ -67,14 +72,14 @@ header > .estampe {
   right:0;
   margin-left:auto;
   margin-right:auto;
-  top: 340px;
+  top: 337px;
 }
 
 header > h1 {
   color: white;
-  padding-top: 70px;
   padding-bottom: 70px;
   padding-left: 35px;
+  padding-top: 85px;
 }
 
 h2 {
@@ -82,7 +87,7 @@ h2 {
 }
 
 .intro {
-  padding-top: 20px;
+  padding-top: 45px;
   text-align: center;
 }
 
@@ -250,7 +255,15 @@ footer > .samoa > img {
 @media only screen and (min-width: 762px) {
 
   header > .estampe {
-    top: 455px;
+    top: 653px;
+  }
+
+  header {
+    height: 605px;
+  }
+
+  header > h1 {
+    padding-top: 185px;
   }
 
   button {
@@ -262,6 +275,10 @@ footer > .samoa > img {
 .form {
     width: 60vw;
 }
+
+  .intro > h2 {
+    width: 320px;
+  }
 
   .fields {
     display: grid;
